@@ -1,0 +1,145 @@
+    1  /Applications/Calico1/StartCalico ; exit;
+    2  /Applications/Calico1-1/StartCalico ; exit;
+    3  /Applications/Calico1-2/StartCalico ; exit;
+    4  /Applications/Calico1-1/StartCalico ; exit;
+    5  echo hello
+    6  echo Hello $user
+    7  echo Hello! $user!
+    8  1s
+    9  ls
+   10  ls-F
+   11  ls -F
+   12  ls -F
+   13  cd Test
+   14  ls -F
+   15  mkdir Test
+   16  ls-F
+   17  ls -F
+   18  cd Test
+   19  touch testfile
+   20  ls-F
+   21  ls - F
+   22  ls -F
+   23  echo Hello $user > testfile
+   24  cat testfile
+   25  echo Hello user$ > testfile 
+   26  cat testfile 
+   27  Hello $user > testfile
+   28  cat testfile
+   29  echo Hello user$ > testfile
+   30  cat testfile
+   31  echo Hello $user  > testfile
+   32  cat testfile
+   33  open
+   34  open .
+   35  rm-i testfile
+   36  rm -i testfile
+   37  ls
+   38  cd
+   39  cd ..
+   40  ls
+   41  ls
+   42  ls-F
+   43  ls -F
+   44  rm -d -i Test
+   45  ls
+   46  pwd
+   47  ls
+   48  ls/Library/Fonts
+   49  ls /Library/Fonts
+   50  ls -a
+   51  ls -l
+   52  open . 
+   53  Git
+   54  xcode-select --version
+   55  xcode-select --version
+   56  xcode-select --version
+   57  $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+   58  $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+   59  $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go
+   60  git
+   61  ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+   62  ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+   63  vi ~/.bash_profile .
+   64  brew install python --framework
+   65  sudo easy_install pip
+   66  /usr/local/Cellar/python
+   67  ls /usr/local/Cellar/python
+   68  ls /usr/local/
+   69  cd Cellar
+   70  cd /usr/local/Cellar
+   71  ls 
+   72  brew doctor
+   73  xcode-select --version
+   74  brew doctor
+   75  python
+   76  cd
+   77  ls-F
+   78  ls
+   79  ls -F
+   80  cd Downloads
+   81  sh python-install-debugging.command
+   82  python ex1.py
+   83  ls -F
+   84  cd Documents
+   85  python ex1.py
+   86  python ex1.py
+   87  python ex3.py
+   88  pyton ex4.py
+   89  python ex4.py
+   90  python ex5.py
+   91  python ex5.py
+   92  python ex5.py
+   93  python ex5.p
+   94  python ex5.py 
+   95  python ex5.py
+   96  ls-F 
+   97  ls -F
+   98  cd Documents
+   99  python ex5.py
+  100  ls -F
+  101  cd Documents
+  102  python ex6.py
+  103  python ex6.py
+  104  python ex7.py
+  105  python ex7.py
+  106  ls -F
+  107  cd Downloads
+  108   sh python-install-debugging.command
+  109  pip install virtualenv
+  110  sudo easy_install pip
+  111  pip install virtualenv
+  112  cd Documents
+  113  cd School Work
+  114  cd School\ Work/
+  115  cd Post\ College/
+  116  cd Joe!
+  117  git init
+  118  ls -a
+  119  touch hello.txt
+  120  ls
+  121  git status
+  122  git add hello.txt
+  123  git status
+  124  get commit hello.txt
+  125  git commit hello.txt
+  126  git config --global user.name "Your Name"
+  127  git config --global user.name "Anisha Ramnani"
+  128   git config --global user.email anisha.ramnani@gmail.com
+  129  git log
+  130  git status
+  131  git commit hello.txt
+  132  git commit -m "This is my second commit"
+  133  git commit -m "This is my second commit"
+  134  git commit -m "This is my second commit"
+  135  git commit -m "This is my second commit"
+  136  git commit -m "This is my secondcommmit. "
+  137  git status
+  138  git commit -m "This is my second commit"
+  139  git commit -m "This is my second commit" hello.txt
+  140  git help
+  141  git remote add origin https://github.com/anisharamnani/Joe-.git
+  142  git push -u origin master
+  143  git push -u origin master
+  144  git push -u origin master
+  145  history > my_history.txt
