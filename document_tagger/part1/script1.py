@@ -16,7 +16,30 @@ documents = [DIV_COMM, MAG_CART]
 # argument to re.compile. We're doing this because it's human beings who create
 # the metadata headers at the top of Project gutenberg docs, and we want to account 
 # for possibility of "title: Some Title", "Title: Some Title", and "TITLE: Some Title").
-title_search = re.compile(r'(title:\s*)(?P<title>.*)', re.IGNORECASE)
+title_search = re.compile(r"""
+                          (?:title:\s*) #look for 'title: ' in the original text.
+                          (?P<title>        #then capture the following group which we'll
+                                            #call title and can access with that name later
+ 
+                          (                 #title consists of words, which are
+                            (
+                              \S*           #one or more non-white spaces
+                              (\ )?         #followed by zero or 1 spaces 
+                                            # note how we have to use a slash to escape
+                                            # the space character, since re.VERBOSE mode ignores
+                                            # unescaped whitespace in your pattern.
+ 
+                            )+              # title has 1 or more such words
+                          )
+                          (                 #and this set of words can optionally be followed
+                            (\n(\ )+)       #by a new line character, plus a few spaces
+                            (\S*(\ )?)*     #and then one or more additional words
+                          )*                #and this * means the title can encompass
+                          )""",             #however many extra lines we need
+                          re.IGNORECASE | re.VERBOSE)  #note the #appearance of | above. 
+                                            #This allows us to set multiple flags to our regex. 
+                                            #See: http://docs.python.org/dev/howto/regex.html#compilation-flags
+
 author_search = re.compile(r'(author:)(?P<author>.*)', re.IGNORECASE)
 translator_search = re.compile(r'(translator:)(?P<translator>.*)', re.IGNORECASE)
 illustrator_search = re.compile(r'(illustrator:)(?P<illustrator>.*)', re.IGNORECASE)
