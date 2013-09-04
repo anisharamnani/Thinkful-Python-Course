@@ -9,6 +9,7 @@ documents = [DIV_COMM, MAG_CART]
 # is at index 0 in sys.argv, so we'll slice everything from index 1 forward.
 searches = {}
 for kw in sys.argv[1:]:
+	#what does kw mean? 
   searches[kw] = re.compile(r'\b' + kw + r'\b', re.IGNORECASE)
 
 for i, doc in enumerate(documents):
