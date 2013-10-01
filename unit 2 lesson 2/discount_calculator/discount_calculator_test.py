@@ -12,4 +12,6 @@ class DiscountCalculatorTests(unittest.TestCase):
 		result = discount_calculator.calculate(100,15,'percent')
 		self.assertEqual(15.0, result)
 
+	
+		
 
