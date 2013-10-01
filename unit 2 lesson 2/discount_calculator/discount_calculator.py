@@ -5,7 +5,9 @@ class DiscountCalculator(object):
 				raise ValueError("Percentage discount cannot exceed 100%")
 			percentage_discount = float(discount_amount)/100
 			discount = float(total) * percentage_discount
-		else discount_type == 'absolute': 
+		elif discount_type == 'absolute': 
+			if discount_amount > total:
+				raise ValueError("Absolute discount cannot exceed order total")
 			discount = discount_amount 
 		else: 
 			raise ValueError("Invalid discount type")
